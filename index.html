@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realtime chat application</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+    <style>
+    .col-white{
+        color:white;
+    }
+    </style>                                         
+</head>
+<body>
+    <nav class="navbar" >
+            <i id="item1" class='fa fa-user fa-3x col-white' ></i>
+            <h4 class="item" id="item2">You</h4>
+            <i  id="item4" class='fa fa-whatsapp fa-3x col-white'></i>
+            <h4 class="item" id="item3">ChatApp</h4>
+        
+        
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">harry:how are you?</div>
+        <div class="message left">rohan:i am fine,how about you?</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="msg-send">
+            <input type="text" name="msgInp" id="msgInp" placeholder="Message">
+            <button id="btn" type="submit"><i class='fa fa-send fa-2x'></i></button>
+        </form>
+    </div>
+</body>
+    
+</html>
